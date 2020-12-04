@@ -1,0 +1,139 @@
+/* --------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+   Styles for header
+   
+-----------------------------------------------------------------------
+--------------------------------------------------------------------- */
+
+header {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    background-color: #ffffff; /* white */
+    border-style: solid;
+    margin-bottom: 8em;
+    ;
+}
+
+header h2 {
+    background-color: #a51c30/* Chrimson */
+    ;
+    color: #ffffff; /* white */
+    font-variant: small-caps;
+    margin: 0.2em;
+}
+
+
+
+header h2.wordmark {
+    background-color: white;
+    background-image: url(../img/fin.svg);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 50px;
+    text-indent: -1000px;
+    float: left;
+}
+
+/* -----------------------------
+   Styles for header  nav
+   ----------------------------- */
+
+header nav {
+    float: right;
+    overflow: auto;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+/* -----------------------------
+   Styles for header primary nav
+   ----------------------------- */
+
+header nav.primary a:active,
+header nav.primary a:hover,
+header nav.primary a:link,
+header nav.primary a:visited {
+    color: #020203;
+    font-weight: bold;
+    /* lighter black */
+}
+
+header nav.primary li.getinfo a{
+    color:#ffffff; /* white */
+    background-color: #a51c30;
+    /*chrimson*/;
+}
+
+/* Add pipe after each nave item except last */
+header nav.primary ul li a::before {
+    content: " | ";
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+
+header nav.primary ul li:first-child a::before {
+    content: " ";
+    padding-left: 0em;
+}
+
+
+
+
+
+/* ---End Header--------------------------------------------------------
+--------------------------------------------------------------------- */
+
+footer{
+ background: black;
+ color: white;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
