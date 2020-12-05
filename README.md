@@ -19,3 +19,5 @@ The website is visible on Git Hub at: https://github.com/adamfknapp/ilovejaws.gi
 ## Random notes
 main index based on column cards per https://www.w3schools.com/howto/howto_css_column_cards.asp
 movie pages based on zig zag layout at https://www.w3schools.com/howto/howto_css_zig_zag_layout.asp
+Great Resource -> https://learnlayout.com/column.html
+
