@@ -1,84 +1,217 @@
 /* --------------------------------------------------------------------
 -----------------------------------------------------------------------
 
-   Styles for header
+   Header
    
 -----------------------------------------------------------------------
 --------------------------------------------------------------------- */
 
-header {
-    font-family: 'Roboto Condensed', Arial, sans-serif;
-    background: yellow;
-    
+.header-basic {
+	background-color: #292c2f;
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
+	padding: 20px 40px;
+	height: 80px;
+	box-sizing: border-box;
 }
 
-header h2 {
-    background-image: url(../img/fin.svg);
-    color: #a51c30; /* Chrimson */
-    background-repeat: no-repeat;
-    text-indent: 2em;
-    margin: 0.2em;
-    width: 50%;
-    display: inline-block;
-    vertical-align: top;
+.header-basic .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
 }
 
+/* Logo */
 
-/* -----------------------------
-   Styles for header  nav
-   ----------------------------- */
+.header-basic .header-limiter h1 {
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
 
-header nav {
-  overflow: auto;
-  width: 50%;
-  display: inline-block;
-  vertical-align: top;
+.header-basic .header-limiter h1 span {
+	color: #a51c30;  /*chrimson*/
+}
+
+/* The header links */
+
+.header-basic .header-limiter a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.header-basic .header-limiter nav{
+	font:16px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-basic .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: #ffffff;
+	font-size: 16px;
+	opacity: 0.9;
+}
+
+.header-basic .header-limiter nav a:hover{
+	opacity: 1;
+}
+
+.header-basic .header-limiter nav a.selected {
+	color: #608bd2;
+	pointer-events: none;
+	opacity: 1;
+}
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-basic {
+		padding: 20px 0;
+		height: 75px;
+	}
+
+	.header-basic .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-basic .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-basic .header-limiter nav a {
+		font-size: 13px;
+	}
 
 }
 
-header nav ul li {
-    display: inline-block;
-}
-
-
-
-/* -----------------------------
-   Styles for header primary nav
-   ----------------------------- */
-
-header nav.primary a:active,
-header nav.primary a:hover,
-header nav.primary a:link,
-header nav.primary a:visited {
-    color: #a51c30; /* Chrimson */
-    text-decoration: none;
-
-}
-
-/* Add pipe after each nave item except last */
-header nav.primary ul li a::before {
-    content: " | ";
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-}
-
-header nav.primary ul li:first-child a::before {
-    content: " ";
-    padding-left: 0em;
-}
-
-
-
-
-
-/* ---End Header--------------------------------------------------------
+/*---End Header--------------------------------------------------------
 --------------------------------------------------------------------- */
 
-footer{
- background: black;
- color: white;
 
+
+
+/* --------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+   Body
+   
+-----------------------------------------------------------------------
+--------------------------------------------------------------------- */
+
+/* For the headers to look good, be sure to reset the margin and padding of the body */
+
+body {
+    background-color: #ebebeb;  /*darker grey*/
+    /*background-image: url("../img/chrissy_swimming.png");
+    background-repeat: no-repeat;*/
+	margin:0.2em;
+	padding:0.2em;
 }
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------------
+-----------------------------------------------------------------------
+
+   Footer
+   Sources: 
+   https://demo.tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/footer-distributed.html
+-----------------------------------------------------------------------
+--------------------------------------------------------------------- */
+
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+
+	padding: 45px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+
+
+
+/* --End Footer--------------------------------------------------------
+--------------------------------------------------------------------- */
 
 * {
   box-sizing: border-box;
@@ -119,5 +252,5 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: green;/*#f1f1f1;*/
 }
