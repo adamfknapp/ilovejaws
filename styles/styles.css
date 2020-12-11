@@ -8,3 +8,40 @@
     -webkit-background-size: cover;
     background-size: cover;
 }
+
+body {
+    background-image: url('../img/xxx');
+    background-repeat: none;
+  }
+  
+footer li{
+    display:inline;
+    padding-right: 3em;
+}
+
+/* Icon Styling------------------------------*/
+/* ------------------------------------------*/
+
+
+.fa {
+  padding: 0em;
+  font-size: 2em;
+  width: 0em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.5)
+}
+
+.fa-linkedin {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #55ACEE;
+  color: white;
+}

@@ -22,3 +22,5 @@ movie pages based on zig zag layout at https://www.w3schools.com/howto/howto_css
 Great Resource -> https://learnlayout.com/column.html
 Plural sight for bootstrap
 
+Social media icons-> https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
+
