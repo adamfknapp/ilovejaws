@@ -24,3 +24,5 @@ Plural sight for bootstrap
 
 Social media icons-> https://www.w3schools.com/howto/howto_css_social_media_buttons.asp
 
+to get the carousel working: https://stackoverflow.com/questions/48824568/bootstrap-4-carousel-sliders-not-working/48826241
+
