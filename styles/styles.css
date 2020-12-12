@@ -28,24 +28,24 @@ ul {
 /* ------------------------------------------*/
 
 /* unvisited link */
-a:link {
-  color: red;
-}
+/*a:link {*/
+/*  color: red;*/
+/*}*/
 
 /* visited link */
-a:visited {
-  color: green;
-}
+/*a:visited {*/
+/*  color: green;*/
+/*}*/
 
 /* mouse over link */
-a:hover {
-  color: hotpink;
-}
+/*a:hover {*/
+/*  color: hotpink;*/
+/*}*/
 
 /* selected link */
-a:active {
-  color: blue;
-}
+/*a:active {*/
+/*  color: blue;*/
+/*}*/
 
 
 /* Icons ------------------------------------*/
