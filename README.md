@@ -26,3 +26,5 @@ Social media icons-> https://www.w3schools.com/howto/howto_css_social_media_butt
 
 to get the carousel working: https://stackoverflow.com/questions/48824568/bootstrap-4-carousel-sliders-not-working/48826241
 
+Audio controls https://www.w3schools.com/html/html5_audio.asp
+https://stackoverflow.com/questions/13865882/how-to-play-mp3-on-link-click

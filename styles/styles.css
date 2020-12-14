@@ -24,6 +24,13 @@ ul {
   list-style-type: none;
 }
 
+html,body,#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
 /* Links ------------------------------------*/
 /* ------------------------------------------*/
 

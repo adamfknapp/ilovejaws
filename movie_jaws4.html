@@ -22,6 +22,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--Map-->
+        <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
+        }
+    </script>
+
 </head>
 
 
@@ -43,71 +68,71 @@
 
 
 
-    <!--Header *********************************************-->
-    <header>
-        <div class="pos-f-t">
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark text-light p-4">
-                    <div class="container">
+<!--Header *********************************************-->
+<header>
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark text-light p-4">
+                <div class="container">
 
-                        <div class="row">
-                            <div class="col">
-                                <h5>JAWS</h5>
-                                <ul>
-                                    <li> <a href="#" class="link-dark">Film </a> </li>
-                                    <li> <a href="#" class="link-dark">Production</a> </li>
-                                    <li> <a href="#" class="link-dark">Reception </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col"> 
-                                <h5>JAWS 2 </h5>
-                                <ul>
-                                    <li> <a href="#" class="link-dark">Film </a> </li>
-                                    <li> <a href="#" class="link-dark">Production</a> </li>
-                                    <li> <a href="#" class="link-dark">Reception </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col"> 
-                                <h5>Jaws 3D</h5> 
-                                <ul>
-                                    <li> <a href="#" class="link-dark">Film </a> </li>
-                                    <li> <a href="#" class="link-dark">Production</a> </li>
-                                    <li> <a href="#" class="link-dark">Reception </a> </li>
-                                </ul>
-                            </div>
-                            <div class="col"> 
-                                <h5>Jaws 4: The Revenge</h5>
-                                <ul>
-                                    <li> <a href="#" class="link-dark">Film </a> </li>
-                                    <li> <a href="#" class="link-dark">Production</a> </li>
-                                    <li> <a href="#" class="link-dark">Reception </a> </li>
-                                </ul>
-                            </div>
-
+                    <div class="row">
+                        <div class="col">
+                            <h5>JAWS</h5>
+                            <ul>
+                                <li> <a href="#" class="link-dark">Film </a> </li>
+                                <li> <a href="#" class="link-dark">Production</a> </li>
+                                <li> <a href="#" class="link-dark">Reception </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>JAWS 2 </h5>
+                            <ul>
+                                <li> <a href="#" class="link-dark">Film </a> </li>
+                                <li> <a href="#" class="link-dark">Production</a> </li>
+                                <li> <a href="#" class="link-dark">Reception </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Jaws 3D</h5>
+                            <ul>
+                                <li> <a href="#" class="link-dark">Film </a> </li>
+                                <li> <a href="#" class="link-dark">Production</a> </li>
+                                <li> <a href="#" class="link-dark">Reception </a> </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h5>Jaws 4: The Revenge</h5>
+                            <ul>
+                                <li> <a href="#" class="link-dark">Film </a> </li>
+                                <li> <a href="#" class="link-dark">Production</a> </li>
+                                <li> <a href="#" class="link-dark">Reception </a> </li>
+                            </ul>
                         </div>
 
                     </div>
+
                 </div>
-
-
-                <!--<div class="bg-dark p-4">-->
-                <!--    <h5 class="text-white h4">Collapsed content</h5>-->
-                <!--    <span class="text-muted">Toggleable via the navbar brand.</span>-->
-                <!--</div>-->
-
-
-
             </div>
-            <nav class="navbar navbar-dark bg-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
+
+            <!--<div class="bg-dark p-4">-->
+            <!--    <h5 class="text-white h4">Collapsed content</h5>-->
+            <!--    <span class="text-muted">Toggleable via the navbar brand.</span>-->
+            <!--</div>-->
+
+
+
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-            </nav>
-        </div>
-    </header>
-    
-    
-    <body>
+        </nav>
+    </div>
+</header>
+
+
+<body>
 
     <!--Jumbotron *********************************************-->
     <div class="jumbotron">
@@ -115,8 +140,8 @@
             <h1 class="display-2 text-white">JAWS 4: THE REVENGE</h1>
 
             <blockquote class="blockquote text-white text-right">
-                <p class="mb-0">"Dumb beyond belief, hollow, bloody and nonsensical"</p>
-                <footer class="blockquote-footer text-white">Sheila Benson <cite title="Source Title"> Los Angeles Times</cite></footer>
+                <p class="mb-0">"Stupid and incompetent"</p>
+                <footer class="blockquote-footer text-white"></footer> Roger Ebert <cite title="Source Title"></cite></footer>
             </blockquote>
 
         </div>
@@ -148,23 +173,29 @@
 
         <div class="row">
             <div class="col">
+
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium leo non est laoreet elementum. Sed suscipit, odio eu molestie luctus, risus sapien porttitor lectus, non interdum nisi ipsum quis ligula. Nam elementum fringilla lacus, quis congue
                 nibh iaculis eu. Ut maximus, neque vitae mollis consequat, ex mi rutrum nisi, id aliquam tellus tortor at ante. Nunc placerat finibus hendrerit. Vestibulum nunc felis, interdum ut nibh ac, dignissim luctus risus. Nulla cursus scelerisque
                 ligula, finibus cursus ante sodales semper.
             </div>
             <div class="col">
+
+
                 <img class="img-fluid" src="./img/shark_dummy.jpg" alt="...">
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <img class="img-fluid" src="./img/shark_dummy.jpg" alt="...">
+                <!--Map from marthas Vinyard to the Bahammas-->
+                <!--<div id="map"></div>-->
+                <img class="img-fluid" src="./img/distance.png" alt="...">
+
             </div>
             <div class="col">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium leo non est laoreet elementum. Sed suscipit, odio eu molestie luctus, risus sapien porttitor lectus, non interdum nisi ipsum quis ligula. Nam elementum fringilla lacus, quis congue
-                nibh iaculis eu. Ut maximus, neque vitae mollis consequat, ex mi rutrum nisi, id aliquam tellus tortor at ante. Nunc placerat finibus hendrerit. Vestibulum nunc felis, interdum ut nibh ac, dignissim luctus risus. Nulla cursus scelerisque
-                ligula, finibus cursus ante sodales semper.
+                <h3> Shark Tracking </h3>
+                <p> The shark follows the brodys from Marthas Vinyard to the Bahammas to carry out its revenge plot. That is over 1,000 miles. The writers did not appear to see any logical flaws with this plot point.  </p>
+
             </div>
         </div>
 
