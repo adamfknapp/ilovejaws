@@ -7,20 +7,18 @@
   padding: 2em;
 }
 
+h3{
+  padding-bottom: 1.5em;
+}
+
+.row{
+  padding: 2em;
+}
+
 .card{
   padding: 1.5em;
   margin: 1.5em;
 }
-
-/*.display-1{*/
-/*    color: #b30000;*/
-/*    font-weight: bold;*/
-/*}*/
-
-/*.blockquote{*/
-/*  color: #b30000;*/
-/*  font-weight: bold;*/
-/*}*/
 
 .blockquote-footer, .display-1, .blockquote{
     color: #b30000;
@@ -40,13 +38,6 @@
 }
 
 
-
-
-body {
-    background-image: url('../img/xxx');
-    background-repeat: none;
-  }
-  
 footer li{
     display:inline;
     padding-right: 3em;
