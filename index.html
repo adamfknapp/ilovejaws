@@ -4,7 +4,7 @@
 
 
 <head>
-    <title>I Love Jaws</title>
+    <title>LoveJaws.com</title>
     <meta charset="utf-8">
 
     <!--Icon for tab -->
@@ -17,27 +17,25 @@
     <!--social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--custome style sheet-->
+    <!--custome style sheet & javascript-->
     <link rel="stylesheet" href="styles/styles.css">
+
+
+    <!--Bootstrap links-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js">
+    </script>
+
+
+
+
 </head>
-
-
-<!--For Visualizing Grid Temp only-->
-<style>
-    .row>[class^=col] {
-        padding-top: 1em;
-        padding-bottom: 1em;
-        background-color: rgba(182, 89, 27, 0.25);
-        border: 1px solid rgba(228, 75, 15, 0.4);
-    }
-
-    .row {
-        margin-top: 0.25em;
-    }
-</style>
 
 
 
@@ -45,94 +43,96 @@
 
 <!--Header *********************************************-->
 <header>
-    <div class="pos-f-t">
-        <div class="collapse" id="navbarToggleExternalContent">
+    <nav class="navbar navbar-light bg-dark">
+        <div class="row">
+            <p class="text-light bg-dark">LoveJaws.com</p>
+        </div>
+
+        <div class="row">
             <div class="bg-dark text-light p-4">
+
                 <div class="container">
 
-                    <div class="row">
-                        <div class="col">
-                            <h5>JAWS</h5>
-                            <ul>
-                                <li> <a href="#" class="link-dark">Film </a> </li>
-                                <li> <a href="#" class="link-dark">Production</a> </li>
-                                <li> <a href="#" class="link-dark">Reception </a> </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h5>JAWS 2 </h5>
-                            <ul>
-                                <li> <a href="#" class="link-dark">Film </a> </li>
-                                <li> <a href="#" class="link-dark">Production</a> </li>
-                                <li> <a href="#" class="link-dark">Reception </a> </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h5>Jaws 3D</h5>
-                            <ul>
-                                <li> <a href="#" class="link-dark">Film </a> </li>
-                                <li> <a href="#" class="link-dark">Production</a> </li>
-                                <li> <a href="#" class="link-dark">Reception </a> </li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h5>Jaws 4: The Revenge</h5>
-                            <ul>
-                                <li> <a href="#" class="link-dark">Film </a> </li>
-                                <li> <a href="#" class="link-dark">Production</a> </li>
-                                <li> <a href="#" class="link-dark">Reception </a> </li>
-                            </ul>
-                        </div>
+                    <ul class="nav nav-pills">
 
-                    </div>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jaws</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item disabled" href="">Film</a>
+                                <a class="dropdown-item disabled" href="#">Production</a>
+                                <a class="dropdown-item" href="movie_jaws1.html">Reception</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jaws 2</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item disabled" href="#">Film</a>
+                                <a class="dropdown-item disabled" href="#">Production</a>
+                                <a class="dropdown-item disabled" href="#">Reception</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jaws 3D</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item disabled" href="#">Film</a>
+                                <a class="dropdown-item disabled" href="#">Production</a>
+                                <a class="dropdown-item disabled" href="#">Reception</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Jaws 4: The Revenge</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item disabled" href="#">Film</a>
+                                <a class="dropdown-item disabled" href="#">Production</a>
+                                <a class="dropdown-item" href="movie_jaws4.html">Reception</a>
+                            </div>
+                        </li>
+
+
+                    </ul>
                 </div>
+
             </div>
 
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        </nav>
-    </div>
+
+    </nav>
+
 </header>
 
 <body>
 
     <!--Text ***************************************************************** -->
     <div class="container">
-        <div class="row ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium leo non est laoreet elementum. Sed suscipit, odio eu molestie luctus, risus sapien porttitor lectus, non interdum nisi ipsum quis ligula. Nam elementum fringilla lacus, quis congue
-            nibh iaculis eu. Ut maximus, neque vitae mollis consequat, ex mi rutrum nisi, id aliquam tellus tortor at ante. Nunc placerat finibus hendrerit. Vestibulum nunc felis, interdum ut nibh ac, dignissim luctus risus. Nulla cursus scelerisque ligula,
-            finibus cursus ante sodales semper.
-        </div>
+
 
         <!--Carosel ***************************************************************** -->
-        <div class="row">
+        <div id="myCarousel" class="row">
 
-       
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner" >
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/animals" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>My Caption Title (1st Image)</h5>
-                            <p>The whole caption will only show up if the screen is at least medium size.</p>
-                        </div>
+                        <img class="d-block w-100" src="https://i.ytimg.com/vi/191A99RbYAE/maxresdefault.jpg" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <h2> THis is text</h2>
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/arch" alt="Second slide">
+                        <img class="d-block w-100" src="https://artist.api.lv3.cdn.hbo.com/images/GXYT08wgPLsIAIwEAAAQB/tilezoom?v=a0acfa24bcae5e931ba3dd97046fc43a&size=1500x844&fmt=jpg" alt="Second slide">
 
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="https://placeimg.com/1080/500/nature" alt="Third slide">
+                        <img class="d-block w-100" src="http://images.fandango.com/images/fandangoblog/HEADLINE-10_UniversalPictures_JawsTheater.jpg" alt="Third slide">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -149,49 +149,75 @@
 
         <!--Text ***************************************************************** -->
         <div class="row ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium leo non est laoreet elementum. Sed suscipit, odio eu molestie luctus, risus sapien porttitor lectus, non interdum nisi ipsum quis ligula. Nam elementum fringilla lacus, quis congue
-            nibh iaculis eu. Ut maximus, neque vitae mollis consequat, ex mi rutrum nisi, id aliquam tellus tortor at ante. Nunc placerat finibus hendrerit. Vestibulum nunc felis, interdum ut nibh ac, dignissim luctus risus. Nulla cursus scelerisque ligula,
-            finibus cursus ante sodales semper.
+
+            <h2>Introduction</h2>
+            <p> <a href="movie_jaws1.html">Jaws</a> is regarded as a watershed film in motion picture history, the father of the summer blockbuster movie and one of the first "high concept" films. Due to the film's success in advance screenings, studio executives
+                decided to distribute it in a much wider release than ever before. The Omen followed suit in the summer of 1976 and then Star Wars one year later in 1977, cementing the notion for movie studios to distribute their big-release action and
+                adventure pictures (commonly referred to as tentpole pictures) during the summer. Jaws is widely regarded as one of the greatest films of all time. Jaws was number 48 on American Film Institute's 100 Years... 100 Movies, a list of the
+                greatest American films of all time, dropping down to number 56 on the 10 Year Anniversary list. It was ranked second on a similar list for thrillers, 100 Years... 100 Thrills.</p>
+
+            <p>The sequels are not held in such high regard. Many reviewers criticized Jaws 2 director Jeannot Szwarc for showing more of the shark than the first film had, reducing the Hitchcockian notion "that the greatest suspense derives from the unseen
+                and the unknown, and that the imagination is capable of conceiving far worse than the materialization of a mere mechanical monster." The performances of Scheider, Gary, and Hamilton in Jaws 2 were praised. However, the teenagers, who are
+                "irritating and incessantly screaming... don't make for very sympathetic victims."</p>
+
+            <p>Reception for Jaws 3-D was generally poor. Variety calls it "tepid" and suggests that Alves "fails to linger long enough on the Great White." It has a 10% "rotten" rating at Rotten Tomatoes. The 3-D was criticized as being a gimmick to attract
+                audiences to the aging series[86] and for being ineffective. Derek Winnert says that "with Richard Matheson's name on the script you'd expect a better yarn" although he continues to say that the film "is entirely watchable with a big pack
+                of popcorn."</p>
+
+            <p><a href="movie_jaws4.html">Jaws: The Revenge</a> attracted the poorest critical reception of the series and was nominated for Worst Picture in the 1987 Golden Raspberry Awards. It was rated by Entertainment Weekly as one of "The 25 Worst Sequels
+                Ever Made." Roger Ebert said that it "is not simply a bad movie, but also a <strong>stupid and incompetent</strong> one." He lists several elements that he finds unbelievable including that Ellen is "haunted by flashbacks to events where
+                she was not present." Ebert also laments that Michael Caine could not attend the ceremony to collect his Academy Award for Best Supporting Actor earned for Hannah and Her Sisters because of his shooting commitments on this film.
+                < /p>
+
+
         </div>
 
         <!--cards ***************************************************************** -->
         <div class="row">
-            <h2>cards</h2>
+            <h2>The Films</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4 ">
+                <div class="col">
+                    <div class="card">
+                        <img src="https://media.giphy.com/media/Wv8K4pnM2u5WmqNWxu/source.gif" class="card-img-top" alt="jaws gif" width="200" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaws</h5>
+                            <p class="card-text"> The original 1975 thriller directed by Steven Spielberg and based on Peter Benchley's 1974 novel of the same name. In the film, a man-eating great white shark attacks beachgoers at a summer resort town, prompting police chief
+                                Martin Brody (Roy Scheider) to hunt it with the help of a marine biologist (Richard Dreyfuss) and a professional shark hunter (Robert Shaw).</p>
+                            <a href="movie_jaws1.html" class="btn btn-primary stretched-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://4.bp.blogspot.com/-GbX1Mx9LrOg/WGPvIme01vI/AAAAAAAAE-Y/bXs0A_Mgs7EH-aZeuuA_M_Qp2e51aQs-gCK4B/s640/KrW8pw.gif" class="card-img-top" alt="jaws 2 gif" width="200" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaws 2</h5>
+                            <p class="card-text">The film stars Roy Scheider as Police Chief Martin Brody. The plot concerns Chief Brody suspecting another great white shark is terrorizing the fictional seaside resort of Amity Island, following a series of incidents and disappearances,
+                                and his suspicions are eventually proven true. Plus, the shark eats a helicopter. You are not even safe in THE AIR!</p>
+                            <a href="#" class="btn btn-secondary stretched-link">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="https://media.giphy.com/media/YFEIVdGLl3jFZJsuSR/giphy.gif" class="card-img-top" alt="Jaws 3 gif" width="200" height="250">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaws 3D</h5>
+                            <p class="card-text"> The film follows the Brody children from the previous films at an aquatic park in Florida with underwater tunnels and lagoons. As the park prepares for opening, a young great white shark infiltrates the park from the sea, seemingly
+                                attacking and killing the park's employees. Once the shark is captured, however, it becomes apparent that a second, much larger shark that also entered the park was the real culprit.
 
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placeimg.com/1080/500/animals" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </p>
+                            <a href="#" class="btn btn-secondary stretched-link">Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card">
-                        <img src="https://placeimg.com/1080/500/animals" class="card-img-top" alt="...">
+                        <img src="https://thumbs.gfycat.com/RespectfulScientificArgentineruddyduck-size_restricted.gif" class="card-img-top" alt="Jaws 4 gif" width="200" height="250">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placeimg.com/1080/500/animals" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <img src="https://placeimg.com/1080/500/animals" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h5 class="card-title">Jaws4: The Revenge</h5>
+                            <p class="card-text">The film focuses on a now-widowed Ellen Brody (Lorraine Gary) and her conviction that a great white shark is <strong>seeking revenge on her family, particularly when it kills her son, and follows her to the Bahamas.</strong>                                Jaws: The Revenge was shot on location in New England and in the Bahamas, and completed on the Universal lot. Like the first two films, Martha's Vineyard was the location of the fictional Amity Island for the opening scenes.</p>
+                            <a href="movie_jaws4.html" class="btn btn-primary stretched-link">Details</a>
                         </div>
                     </div>
                 </div>

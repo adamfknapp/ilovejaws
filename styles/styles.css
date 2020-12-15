@@ -1,51 +1,87 @@
+#jaws1_jumbotron{
+  background-image: url("https://www.indiewire.com/wp-content/uploads/2017/06/jaws-01.jpg?w=670&h=377&crop=1");
+    background-position: top;
+}
+
+#myCarousel{
+  padding: 2em;
+}
+
+h3{
+  padding-bottom: 1.5em;
+}
+
+.row{
+  padding: 2em;
+}
+
+.card{
+  padding: 1.5em;
+  margin: 1.5em;
+}
+
+.blockquote-footer, .display-1, .blockquote{
+    color: #b30000;
+    font-weight: bold;
+}
+
 .jumbotron {
     background-image: url("https://www.denofgeek.com/wp-content/uploads/2016/07/jaws_the_revenge_shark.jpg");
     background-color: #17234E;
-    margin-bottom: 0;
+    margin-bottom: 2em;
     min-height: 50%;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
+    
 }
 
-body {
-    background-image: url('../img/xxx');
-    background-repeat: none;
-  }
-  
+
 footer li{
     display:inline;
     padding-right: 3em;
 }
 
 
+
 ul {
   list-style-type: none;
+}
+
+html,body,#map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+my_carousel{
+  padding: 2em;
+  margin: 2em;
 }
 
 /* Links ------------------------------------*/
 /* ------------------------------------------*/
 
 /* unvisited link */
-a:link {
-  color: red;
-}
+/*a:link {*/
+/*  color: red;*/
+/*}*/
 
 /* visited link */
-a:visited {
-  color: green;
-}
+/*a:visited {*/
+/*  color: green;*/
+/*}*/
 
 /* mouse over link */
-a:hover {
-  color: hotpink;
-}
+/*a:hover {*/
+/*  color: hotpink;*/
+/*}*/
 
 /* selected link */
-a:active {
-  color: blue;
-}
+/*a:active {*/
+/*  color: blue;*/
+/*}*/
 
 
 /* Icons ------------------------------------*/
